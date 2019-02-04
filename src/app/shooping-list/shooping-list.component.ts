@@ -16,4 +16,8 @@ export class ShoopingListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onIngredientAdded(ingredient: Ingredent) {
+    this.ingredients.push(ingredient);
+  }
+
 }
