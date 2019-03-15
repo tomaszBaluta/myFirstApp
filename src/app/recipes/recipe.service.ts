@@ -1,11 +1,11 @@
 import {Recipe} from './recipe.model';
-import {EventEmitter, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Ingredient} from '../shared/ingredient.model';
 import {ShoppingListService} from '../shopping-list/shopping-list.service';
 
 @Injectable()
 export class RecipeService {
-  recipeSelected = new EventEmitter<Recipe>();
+  // recipeSelected = new EventEmitter<Recipe>();
 
   private recipes: Recipe[] = [
     new Recipe('A test recipe', 'This is a test', 'https://galleria.riza.it/files/thumbs/640x316c/2018-08/lenticchie-ricetta.jpg', [
